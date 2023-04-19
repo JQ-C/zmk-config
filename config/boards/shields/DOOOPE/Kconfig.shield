@@ -1,0 +1,5 @@
+config SHIELD_DOOOPE_LEFT
+    def_bool $(shields_list_contains,DOOOPE_left)
+
+config SHIELD_DOOOPE_RIGHT
+    def_bool $(shields_list_contains,DOOOPE_right)

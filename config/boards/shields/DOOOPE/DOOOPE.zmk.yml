@@ -1,0 +1,11 @@
+file_format: "1"
+id: DOOOPE
+name: DOOOPE
+type: shield
+url: https://github.com/JQ-C/zmk-config
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - DOOOPE_left
+  - DOOOPE_right

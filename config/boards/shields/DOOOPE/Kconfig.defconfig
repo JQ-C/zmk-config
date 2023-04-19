@@ -1,0 +1,16 @@
+if SHIELD_DOOOPE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "DOOOPE"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DOOOPE_LEFT || SHIELD_DOOOPE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
