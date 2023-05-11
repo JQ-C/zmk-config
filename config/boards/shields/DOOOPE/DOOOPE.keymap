@@ -12,17 +12,22 @@
     tapping-term-ms = <400>;
 };
 
-//COMBOS TO SWITCH LAYERS REMOVE IF NOT USED
+//COMBOS 
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_tab {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <30 32>;
+            bindings = <&kp TAB>;
         };
     };
 };
+
+&sk {
+    ignore-modifiers;
+};
+
 
 //HOLD TAP
 / {
