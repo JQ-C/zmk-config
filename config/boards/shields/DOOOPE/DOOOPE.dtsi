@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zephyr,console = &cdc_acm_uart;
     };
 
     default_transform: matrix-transform {
@@ -30,4 +31,13 @@
         diode-direction = "col2row";
         
     };
+
+    &usbd {
+  status = "okay";
+  cdc_acm_uart: cdc_acm_uart {
+    compatible = "zephyr,cdc-acm-uart";
+    label = "CDC_ACM_0";
+  };
+};
+
 };
