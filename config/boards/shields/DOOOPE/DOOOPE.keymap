@@ -63,7 +63,7 @@
 //                                         |  SPACE  |ESC [NUM]|                              |ENT[FUNC]|   DEL   |
             bindings = <
                         &kp W         &kp F           &kp P           &kp B                     &kp J          &kp L           &kp U           &kp Y    
-    &kp Q   &mt LWIN A  &mt LALT R    &mt LCTRL S     &mt LSHFT T     &kp G                     &kp M          &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &mt RWIN O    &kp SQT
+    &kp Q   &mt LWIN A  &mt LALT R    &mt LCTRL S     &mt LSHFT T     &kp G                     &kp M          &mt RSHFT N    &mt RCTRL E     &mt RALT I     &mt RWIN O    &kp SQT
             &hm LC(Z) Z &hm LC(X) X   &hm LC(C) C     &kp D           &hm LC(V) V               &kp K          &kp H           &kp COMMA       &kp DOT           &kp FSLH 
                                                       &kp SPACE       &lt NUM ESC               &lt FUNC RET   &kp BSPC
             >;
