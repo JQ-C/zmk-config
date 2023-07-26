@@ -3,6 +3,3 @@ config SHIELD_DOOOPE_LEFT
 
 config SHIELD_DOOOPE_RIGHT
     def_bool $(shields_list_contains,DOOOPE_right)
-
-# Turn on logging, and set ZMK logging to debug output
-CONFIG_ZMK_USB_LOGGING=y

@@ -17,5 +17,3 @@ include:
     shield: DOOOPE_left
   - board: seeeduino_xiao_ble
     shield: DOOOPE_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
