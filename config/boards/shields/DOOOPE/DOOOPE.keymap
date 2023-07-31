@@ -9,7 +9,8 @@
 
 //DEFINE THE TAPPING TIME FOR MODTAP
 &mt {
-    tapping-term-ms = <400>;
+  flavor = "tap-preferred";
+  tapping_term_ms = <400>;
 };
 
 //COMBOS 
@@ -60,25 +61,25 @@
 //                     |    W    |    F    |    P    |    B    |                              |    J    |    L    |    U    |    Y    |
 // |    Q    | A [WIN] | R [ALT] | S[CTRL] | T[SHIFT]|    G    |                              |    M    | N[SHIFT]| E[CTRL] | I [ALT] | O [WIN] |    ' "  |
 //           | Z [UNDO]| X [CUT] | C[COPY] |    D    | V[PASTE]|                              |    K    |    H    |    <,   |    .>   |    /?   |
-//                                         |  SPACE  |ESC [NUM]|                              |ENT[FUNC]|   DEL   |
+//                                         |  SPACE  |TAB [NUM]|                              |ENT[FUNC]|   DEL   |
             bindings = <
                         &kp W         &kp F           &kp P           &kp B                     &kp J          &kp L           &kp U           &kp Y    
     &kp Q   &mt LWIN A  &mt LALT R    &mt LCTRL S     &mt LSHFT T     &kp G                     &kp M          &mt RSHFT N    &mt RCTRL E     &mt RALT I     &mt RWIN O    &kp SQT
             &hm LC(Z) Z &hm LC(X) X   &hm LC(C) C     &kp D           &hm LC(V) V               &kp K          &kp H           &kp COMMA       &kp DOT           &kp FSLH 
-                                                      &kp SPACE       &lt NUM ESC               &lt FUNC RET   &kp BSPC
+                                                      &kp SPACE       &lt NUM TAB               &lt FUNC RET   &kp BSPC
             >;
         };
 
         num_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//                     |     7   |     8   |    9   |   [{    |                             |   }]     |         |    UP      |           |
-// |  SHIFT  |     0   |     4   |     5   |    6   |   ;:    |                             |   +=     |  LEFT   |   DOWN     |  RIGHT    |   P UP    |  SHIFT   |
-//           |         |     1   |     2   |    3   |   `~    |                             |   \|     |  HOME   |   END      |    CAPS   |  P DOWN   |
-//                                         |  SPACE |ESC [NUM]|                             |ENT[FUNC] |   DEL   |
+//                     |    4    |    5    |   6    |   [{    |                             |   }]     |   -_    |    UP      |           |
+// |  SHIFT  |     0   |    1    |    2    |   3    |   ;:    |                             |   +=     |  LEFT   |   DOWN     |  RIGHT    |   P UP    |  SHIFT   |
+//           |         |    7    |    8    |   9    |   `~    |                             |   \|     |  HOME   |   END      |    CAPS   |  P DOWN   |
+//                                         |  SPACE |TAB [NUM]|                             |ENT[FUNC] |   DEL   |
             bindings = <
-                         &kp N7     &kp N8   &kp N9   &kp LBKT                                &kp RBKT   &none      &kp UP      &none    
-    &sk LSHIFT  &kp N0   &kp N4     &kp N5   &kp N6   &kp SEMI                                &kp EQUAL  &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_UP  &sk LSHIFT
-                &none    &kp N1     &kp N2   &kp N3   &kp GRAVE                               &kp BSLH   &kp HOME   &kp END     &kp CLCK    &kp PG_DN
+                        &kp N4     &kp N5   &kp N6    &kp LBKT                                &kp RBKT   &kp MINUS  &kp UP      &none    
+    &sk LSHIFT  &kp N0  &kp N1     &kp N2   &kp N3    &kp SEMI                                &kp EQUAL  &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_UP  &sk LSHIFT
+                &none   &kp N7     &kp N8   &kp N9    &kp GRAVE                               &kp BSLH   &kp HOME   &kp END     &kp CLCK    &kp PG_DN
                                              &trans   &trans                                  &trans     &trans
             >;
         };
@@ -88,7 +89,7 @@
 //                     |    F7   |    F8   |   F9   | VOL - + |                             |          |         |            |           |
 // |  F12    |    F11  |    F4   |    F5   |   F6   |PLAY PAUS|                             |          |  SHIFT  |     CTRL   |    ALT    |    WIN    |          |
 //           |    F10  |    F1   |    F2   |   F3   |NEXT PREV|                             | CLEAR BT |  BT 0   |     BT 1   |   BT 2    |   BT 3    |
-//                                         |  SPACE |ESC [NUM]|                             |ENT[FUNC] |   DEL   |
+//                                         |  SPACE |TAB [NUM]|                             |ENT[FUNC] |   DEL   |
             bindings = <
                          &kp F7     &kp F8   &kp F9   &hm C_VOL_UP C_VOL_DN                 &none       &none          &none            &none    
     &kp F12    &kp F11   &kp F4     &kp F5   &kp F6   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
