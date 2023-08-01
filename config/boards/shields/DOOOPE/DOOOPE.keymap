@@ -49,11 +49,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
-};
 
-/ {
-    behaviors {
         td_num: tap_dance_num_layer {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
@@ -62,7 +58,7 @@
             bindings = <&kp TAB>, <&to 1>;
         };
     };
-}
+};
 
 
 / {
