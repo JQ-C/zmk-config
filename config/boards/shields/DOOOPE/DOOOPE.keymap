@@ -17,16 +17,23 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_tab {
+        combo_esc {
             timeout-ms = <50>;
             key-positions = <30 32>;
-            bindings = <&kp TAB>;
+            bindings = <&kp ESC>;
         };
 
         combo_ctrlBspc {
             timeout-ms = <50>;
             key-positions = <30 33>;
             bindings = <&kp LC(BSPC)>;
+        };
+
+        combo_tog_num {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            layers = <NUM>
+            bindings = <&tog NUM>;
         };
     };
 };
@@ -91,9 +98,9 @@
 //           |    F10  |    F1   |    F2   |   F3   |NEXT PREV|                             | CLEAR BT |  BT 0   |     BT 1   |   BT 2    |   BT 3    |
 //                                         |  SPACE |TAB [NUM]|                             |ENT[FUNC] |   DEL   |
             bindings = <
-                         &kp F7     &kp F8   &kp F9   &hm C_VOL_UP C_VOL_DN                 &none       &none          &none            &none    
-    &kp F12    &kp F11   &kp F4     &kp F5   &kp F6   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
-               &kp F10   &kp F1     &kp F2   &kp F3   &hm C_NEXT C_PREV                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
+                         &kp F4     &kp F5   &kp F6   &hm C_VOL_UP C_VOL_DN                 &none       &none          &none            &none    
+    &kp F12    &kp F11   &kp F1     &kp F2   &kp F3   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
+               &kp F10   &kp F7     &kp F8   &kp F9   &hm C_NEXT C_PREV                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
                                              &trans   &trans                                &trans      &trans
             >;
         };
