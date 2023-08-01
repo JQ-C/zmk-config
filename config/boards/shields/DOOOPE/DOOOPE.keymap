@@ -32,7 +32,7 @@
         combo_tog_num {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            layers = <NUM>
+            layers = <NUM>;
             bindings = <&tog NUM>;
         };
     };
