@@ -10,7 +10,7 @@
 //DEFINE THE TAPPING TIME FOR MODTAP
 &mt {
   flavor = "tap-preferred";
-  tapping_term_ms = <400>;
+  tapping_term_ms = <250>;
 };
 
 //COMBOS 
@@ -33,7 +33,7 @@
             timeout-ms = <50>;
             key-positions = <3 4>;
             layers = <NUM>;
-            bindings = <&tog NUM>;
+            bindings = <&tog 1>;
         };
     };
 };
