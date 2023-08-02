@@ -55,7 +55,7 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp TAB>, <&tog 1>;
+            bindings = <&kp SPACE &tog 1>;
         };
     };
 };
@@ -75,7 +75,7 @@
                         &kp W         &kp F           &kp P           &kp B                     &kp J          &kp L           &kp U           &kp Y    
     &kp Q   &mt LWIN A  &mt LALT R    &mt LCTRL S     &mt LSHFT T     &kp G                     &kp M          &mt RSHFT N    &mt RCTRL E     &mt RALT I     &mt RWIN O    &kp SQT
             &hm LC(Z) Z &hm LC(X) X   &hm LC(C) C     &kp D           &hm LC(V) V               &kp K          &kp H           &kp COMMA       &kp DOT           &kp FSLH 
-                                                      &kp SPACE       &td_num               &lt FUNC RET   &kp BSPC
+                                                      &td_num         &lt NUM TAB               &lt FUNC RET   &kp BSPC
             >;
         };
 
