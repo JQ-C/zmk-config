@@ -94,14 +94,14 @@
 
         func_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//                     |    F7   |    F8   |   F9   | VOL - + |                             |          |         |            |           |
-// |  F12    |    F11  |    F4   |    F5   |   F6   |PLAY PAUS|                             |          |  SHIFT  |     CTRL   |    ALT    |    WIN    |          |
+//                     |    F7   |    F8   |   F9   | VOL - + |                             | BOOT     |         |            |           |
+// |  BOOT   |    F11  |    F4   |    F5   |   F6   |PLAY PAUS|                             |          |  SHIFT  |     CTRL   |    ALT    |    WIN    |          |
 //           |    F10  |    F1   |    F2   |   F3   |NEXT PREV|                             | CLEAR BT |  BT 0   |     BT 1   |   BT 2    |   BT 3    |
 //                                         |  SPACE |TAB [NUM]|                             |ENT[FUNC] |   DEL   |
             bindings = <
-                         &kp F4     &kp F5   &kp F6   &hm C_VOL_UP C_VOL_DN                 &none       &none          &none            &none    
-    &kp F12    &kp F11   &kp F1     &kp F2   &kp F3   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
-               &kp F10   &kp F7     &kp F8   &kp F9   &hm C_NEXT C_PREV                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
+                          &kp F4     &kp F5   &kp F6   &hm C_VOL_UP C_VOL_DN                 &bootloader &none          &none            &none    
+    &bootloader &kp F11   &kp F1     &kp F2   &kp F3   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
+                &kp F10   &kp F7     &kp F8   &kp F9   &hm C_NEXT C_PREV                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
                                              &trans   &trans                                &trans      &trans
             >;
         };
