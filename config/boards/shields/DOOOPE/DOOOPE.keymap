@@ -101,8 +101,8 @@
             bindings = <
                           &kp F4     &kp F5   &kp F6   &hm C_VOL_UP C_VOL_DN                 &bootloader &none          &none            &none    
     &bootloader &kp F11   &kp F1     &kp F2   &kp F3   &kp C_PP                              &none       &kp RSHFT      &kp RCTRL        &kp RALT        &kp RWIN      &none
-                &kp F10   &kp F7     &kp F8   &kp F9   &hm C_NEXT C_PREV                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
-                                             &trans   &trans                                &trans      &trans
+                &kp F10   &kp F7     &kp F8   &kp F9   &hm C_PREV C_NEXT                     &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3
+                                              &trans   &trans                                &trans      &trans
             >;
         };
     };
