@@ -35,6 +35,12 @@
             bindings = <&tog 1>;
         };
 
+        combo_tog_func {
+            timeout-ms = <50>;
+            key-positions = <13 24>;
+            bindings = <&tog 2>;
+        };
+
     };
 };
 
